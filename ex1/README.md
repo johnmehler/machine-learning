@@ -1,0 +1,1 @@
+Completed the three required exercises and featureNormalization so far.
