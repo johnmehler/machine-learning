@@ -20,11 +20,17 @@ grad = zeros(size(theta));
 % Note: grad should have the same dimensions as theta
 %
 
+a = X*theta;
+sigmoidResult = sigmoid(a);
+
+% Gradient
+grad = ((sigmoidResult-y)' * X)/m;
+
+% Cost
+J = ((-y' * log(sigmoidResult)) - (1-y)' * log(1-sigmoidResult))/m;
 
 
-
-
-
+% Compute the cost
 
 
 % =============================================================
