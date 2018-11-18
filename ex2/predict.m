@@ -18,6 +18,8 @@ a = X*theta;
 
 p = sigmoid(a) >= 0.5;
 
+p
+
 
 
 
