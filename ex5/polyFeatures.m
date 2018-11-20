@@ -15,10 +15,11 @@ X_poly = zeros(numel(X), p);
 %
 % 
 
-
-
-
-
+% Keep all previous columns, add a column with each iteration
+% That column is just X transverse times the column number
+for i = 1:p
+  X_poly(:,i) = X' .^ i;
+endfor
 
 % =========================================================================
 
