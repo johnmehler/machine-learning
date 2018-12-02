@@ -20,11 +20,9 @@ S = zeros(n);
 %       number of examples).
 %
 
-
-
-
-
-
+% In the video, it says the sum of X * X'. Not sure why that's reversed here, but X*X' didn't work.
+Sigma = (1/m) * X'*X; 
+[U, S, V] = svd(Sigma);
 
 % =========================================================================
 

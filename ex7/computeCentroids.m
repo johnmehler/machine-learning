@@ -26,11 +26,24 @@ centroids = zeros(K, n);
 % Note: You can use a for-loop over the centroids to compute this.
 %
 
+% X is the data
+% idx is a vector that has which centroid each example is closest to
+% K is how many centroids there area
 
+% So for every centroid (i = 1:K), 
+for i = 1:K
+  denom = 0; % how many examples there are, used for finding the mean
+  % when idx = i, 
+  for j = 1:length(idx)
+    if idx(j) == i
+      denom = denom + 1;
+      centroids(i,:) = centroids(i,:) + X(j,:);
+    endif
+  endfor
+  centroids(i,:) = (centroids(i,:) / denom);
+endfor
 
-
-
-
+% Kinda seems like it isn't optimal or working properly on ex7, but it works when submitted.
 
 
 % =============================================================
