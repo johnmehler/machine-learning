@@ -4,7 +4,7 @@ This is my code for the programming assignments on the [Coursera Machine Learnin
 
 ## Certificate
 
-To be updated when certificate is received.
+Certification can be found [here](https://www.coursera.org/account/accomplishments/verify/VD5YGN2MBXH2)
 
 ## Author
 
